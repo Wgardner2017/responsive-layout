@@ -1,1 +1,41 @@
+/* Browser Reset */
+* {
+  box-sizing: border-box;
+}
 
+/* Base element styles */
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+  color: #093a58;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: min-content;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
