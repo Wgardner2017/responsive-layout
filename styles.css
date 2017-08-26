@@ -30,7 +30,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4 
+h5 {
   margin-top: 0;
   text-align: center;
 }
@@ -39,13 +40,14 @@ nav a {
   text-align: center;
   display: block;
   background-color: rgb(237, 230, 230);
-  border; .5px;
+  border: .5px;
   padding: .5em;
   margin: 5px;
 }
 
 img {
  max-width: 100%;
+ align-content: center;
 }
 main {
   margin: .1em
@@ -60,20 +62,18 @@ footer .bottom {
   display: flex;
   justify-content: space-between;
   border-top: .5px solid #d3d3d3;
+  margin: .5em;
 }
 ul,
  a {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between
+  margin: .2em;
+  padding: .1em;
   text-decoration: none;
-  
 }
- .bottomnav  {
-   text-decoration: none;
-   display: flex;
-   justify-content: space-between;  
-}
+
 
 
       
@@ -82,6 +82,24 @@ ul,
 /* ==============================
    Media Queries 
    ============================== */
+   @media (max-width: 768px) {
+     #Home1, 
+     #Portfolio1 {
+       visibility: hidden;
+     }
+   
+ footer h1 {
+     font-size: .6em;
+   }
+ul {
+  font-size: .6em;
+}
+
+}
+   
+   
+   
+   
    @media (min-width: 48em) {
 
     header .container {
@@ -89,11 +107,18 @@ ul,
       justify-content: space-between;
     }
   
-    nav {
+    nav  {
       display: flex;
       align-items: center;
     }
-    
+   nav a {
+      background-color: white;
+      border: 0;
+      padding: 0;
+      margin: .5em;
+
+    }
+
   main {
     display:grid;
   }
@@ -103,18 +128,19 @@ ul,
       grid-template-columns: 1fr, 1 fr;
       grid-template-areas: "content img";
       column-gap: 8em;
-      margin-bottom: 2em;
+      margin: 2em;
   }
   
    .media .image {
       grid-area: img;
+      margin: 1em;
     }
   
   .media .text {
       grid-area: content;
       font-size: 1em;
       padding: 1em;
-      margin-bottom: .2em;
+      margin: 1em;
       text-align: inherit;
      }
   
@@ -135,16 +161,18 @@ ul,
     }
     img {
       max-width: 100%;
+    }
 
-    footer .bottom {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    nav {
-      display: flex;
-      align-items: center;
-    }
+    
+  #Backtotop1 {
+    visibility: hidden;
+  }
+    
+  ul {
+    margin: .5em;
+    padding: 0;
+  }
+    
   }
   @media (min-width: 64em) {
     .media {
