@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Student Portfolio</title>
 </head>
 
@@ -14,81 +14,113 @@
 
     <header>
         <div class="container">
-            <h1 id="Student Name">Student Name</a>
-            </h1>
+            <h1 id="Student Name">Student Name</h1>
+
             <nav>
-                <a href="#Student Name">Home</a>
-                <a href="#Portfolio">Portfolio</a>
-                <a href="#Contact">Contact</a>
+                <a href="#Student Name">HOME</a>
+                <a href="#Portfolio">PORTFOLIO</a>
+                <a href="#Contact">CONTACT</a>
             </nav>
         </div>
 
     </header>
 
-    <div class="intro">
-        <img class="profile pic" src="Images\responsive-layout-profile.png" alt="profile pic">
-        <p>Hi! I'm a front end developer who loves respnsive design and css. I recently finished a degree in front end development
-            at Treehouse and am excited to put all my skills to use.</p>
-    </div>
+
     <main>
+
+        <wrapper class="media">
+
+            </div class="image column">
+            <img class="profile pic" src="Images\responsive-layout-profile.png" alt="profile pic">
+            </div>
+            <div class="text column">Hi! I 'm a front end developer who loves responsive design and css. I recently finished a degree in front end
+                development at Treehouse and am excited to put all my skills to use.
+            </div>
+        </wrapper>
+
+
         <h2 id="Portfolio">Portfolio</h2>
-        <div class="Marketing Column">
-            <img class="marketing pic" src="images/rsz_portfolio-1.png" alt="marketing pics">
-            <h3>Marketing Page</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am intersted in.</p>
+        <wrapper class="wrapper">
+            <div class="Marketing Column">
+                <figure>
+                    <img class="marketing pic" src="images/rsz_portfolio-1(1).png" alt="marketing pics">
+                    <figcaption>
+                        <h3>Marketing Page</h3>
+                        This project shows the front page of a marketing website meant for a specific business I am intersted in.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="Search Page Column">
+                <figure>
+                    <img class="search pic" src="images/rsz_portfolio-2(1).png" alt="Search Page Pic">
+                    <figcaption>
+                        <h3>Search Page</h3>
+                        This project searches through a specific database to find information that the user is trying to look up.
+                    </figcaption>
+                </figure>
+            </div>
 
-        </div>
-        <div class="Search Page Column">
-            <img class="search pic" src="images/rsz_portfolio-2.png" alt="Search Page Pic">
-            <h3>Search Page</h3>
-            <p>This project searches through a specific database to find information that the user is trying to look up</p>
-        </div>
+            <div class="Travel App Column">
+                <figure>
+                    <img class="Travel App pic" src="images/rsz_portfolio-3(1).png" alt="Travel App Pic">
+                    <figcaption>
+                        <h3>Travel App</h3>
+                        This project compares travel times based on different transportation methods and tells you the best one.
+                    </figcaption>
+                </figure>
+            </div>
 
-        <div class="Travel App Column">
-            <img class="Travel App pic" src="images/rsz_portfolio-3.png" alt="Travel App Pic">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the best one</p>
-        </div>
+            <div class="Map of Fav Spots Column">
+                <figure>
+                    <img class="fav spots" src="images/rsz_portfolio-6(1).png" alt="Map of favorite spots Pic">
+                    <figcaption>
+                        <h3>Search Page</h3>
+                        This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+                    </figcaption>
+                </figure>
+            </div>
 
-        <div class="Map of Fav Spots Column">
-            <img class="fav spots" src="images/rsz_portfolio-6.png" alt="Map of favorite spots Pic">
-            <h3>Search Page</h3>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking
-                tour.
-            </p>
-        </div>
+            <div class="Photo Gallery Column">
+                <figure>
+                    <img class="photo gallery pic" src="images/rsz_portfolio-5(1).png" alt="Photo Gallery Pic">
+                    <figcaption>
+                        <h3>Photo Gallery</h3>
+                        This project shows pics from a recent trip to the viewer and allows them to easily navigate through photos.
+                    </figcaption>
+                </figure>
+            </div>
 
-        <div class="Photo Gallery">
-            <img class="photo gallery pic" src="images/rsz_portfolio-5.png" alt="Photo Gallery Pic">
-            <h3>Photo Gallery</h3>
-            <p>This project shows pics from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </div>
+            <div class="Calculator Column">
+                <figure>
+                    <img class="search pic" src="images/rsz_1portfolio-12.png" alt="Calculator Pic">
+                    <figcaption>
+                        <h3>Calculator</h3>
+                        Someone can enter in the numbers they want, press the big blue button, and get what the result.
+                    </figcaption>
+                </figure>
+            </div>
+        </wrapper>
+    </main>
+    <div class="Get in Touch">
+        <h2 id="Contact">Contact</h2>
+        <h4>If you're interested in chatting or want more information about what I 've been working on, I'd love to hear from
+            you.
+        </h4>
 
-        <div class="Calculator Column">
-            <img class="search pic" src="images/rsz_portfolio-12.png" alt="Calculator Pic">
-            <h3>Calculator</h3>
-            <p>Someone can enter in the numbers they want, press the big blue button, and get what the result.</p>
-        </div>
-        <div class="Get in Touch">
-            <h2 id="Contact">Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from
-                you.
-            </p>
-
-            <h4>Phone <a href="tel:1-111-555-1234">+1(111)555-1234</a></h4>
-            <h4>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></h4>
-        </div>
+        <h4>Phone <a href="tel:1-111-555-1234">+1(111)555-1234</a></h4>
+        <h4>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></h4>
+    </div>
 
 </body>
 <footer>
-    <div class="footer">
-        <h2>Student Name</h2>
-
-        <nav>
-            <a href="#Student Name">Home</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#Student Name">Back To Top</a>
-        </nav>
-
+    <div class="bottom">
+        <h1 id="Student Name">Student Name</h1>
+        <ul id="bottomnav">
+            <li><a hidden href=" #Student Name ">HOME</a></li>
+            <li><a hidden href="#Portfolio ">PORTFOLIO</a</li>
+            <li><a href="#Student Name ">BACK TO TOP</a></li>
+        </ul>
+    </div>
+</footer>
 
 </html>
