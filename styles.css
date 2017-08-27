@@ -30,10 +30,13 @@ a {
 h1,
 h2,
 h3,
-h4 
+h4,
 h5 {
   margin-top: 0;
   text-align: center;
+}
+h5 {
+  font-size: 1.2em;
 }
 nav a {
   text-decoration: none;
@@ -50,13 +53,21 @@ img {
  align-content: center;
 }
 main {
-  margin: .1em
+  margin: 1em;
   padding: 1em;
   background-color: white;
 }
 
 wrapper {
   background-color: white;
+}
+
+ {
+  text-align: center;
+}
+
+callme {
+  text-align: center;
 }
 footer .bottom {
   display: flex;
@@ -94,6 +105,8 @@ ul,
 ul {
   font-size: .6em;
 }
+
+
 
 }
    
