@@ -14,6 +14,7 @@ p {
   font-size: .95em;
   margin-bottom: .5em;
   text-align: justify;
+  max-width: 320px;
 }
 h1 {
   font-size: 1.5em;
@@ -34,7 +35,7 @@ h5 {
 h5 {
   font-size: 1.2em;
 }
-nav {
+nav a {
   text-decoration: none;
   text-align: center;
   display: block;
@@ -51,31 +52,54 @@ img {
 main {
   margin: 1em;
   padding: 1em;
+  background-color: white;
 }
 
+wrapper {
+  background-color: white;
+}
+
+ {
+  text-align: center;
+}
+
+callme {
+  text-align: center;
+}
 footer .bottom {
   display: flex;
   justify-content: space-between;
   border-top: .5px solid #d3d3d3;
   margin: .5em;
 }
-
-bottom,
 ul,
- {
+a {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
+  margin: .2em;
+  padding: .1em;
   text-decoration: none;
-  margin: .5em;
-  padding: 0.3em;
 }
 
 /* ==============================
    Media Queries 
    ============================== */
+@media (max-width: 768px) {
+  #Home1,
+  #Portfolio1 {
+    visibility: hidden;
+  }
 
-@media (min-width: 48m) {
+  footer h1 {
+    font-size: .5em;
+  }
+  ul {
+    font-size: .4em;
+  }
+}
+
+@media (min-width: 48em) {
   header .container {
     display: flex;
     justify-content: space-between;
@@ -98,14 +122,14 @@ ul,
 
   .media {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr, 1 fr;
     grid-template-areas: "content img";
     column-gap: 8em;
     margin: 2em;
   }
 
   .media .image {
-    grid-area: "img";
+    grid-area: img;
     margin: 1em;
   }
 
@@ -122,20 +146,30 @@ ul,
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: .1em;
     grid-row-gap: 0;
-    img: align-self: auto;
   }
-  h2,
-  h3,
+  h2 {
+    align-self: center;
+  }
+  h3 {
+    text-align: center;
+  }
   h4 {
     text-align: center;
   }
-  
+  img {
+    max-width: 100%;
+  }
 
   #Backtotop1 {
     visibility: hidden;
   }
-}
 
+  ul {
+    text-align: left;
+    margin: .5em;
+    padding: 0;
+  }
+}
 @media (min-width: 64em) {
   .media {
     display: grid;
@@ -146,7 +180,7 @@ ul,
   }
 
   .media .image {
-    grid-area: "img";
+    grid-area: img;
     padding: 1em;
   }
 
@@ -168,7 +202,4 @@ ul,
     grid-column-gap: .1em;
     grid-row-gap: .5em;
   }
-
-img {
-  align-items: center;
 }
