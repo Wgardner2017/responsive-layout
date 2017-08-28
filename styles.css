@@ -14,7 +14,6 @@ p {
   font-size: .95em;
   margin-bottom: .5em;
   text-align: justify;
-  max-width: 320px;
 }
 h1 {
   font-size: 1.5em;
@@ -82,7 +81,7 @@ a {
 /* ==============================
    Media Queries 
    ============================== */
-@media (max-width: 768px) {
+@media (max-width: 46em) {
   #Home1,
   #Portfolio1 {
     visibility: hidden;
@@ -96,7 +95,7 @@ a {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 46m) {
   header .container {
     display: flex;
     justify-content: space-between;
