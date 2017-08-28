@@ -52,52 +52,29 @@ img {
 main {
   margin: 1em;
   padding: 1em;
-  background-color: white;
 }
 
-wrapper {
-  background-color: white;
-}
-
- {
-  text-align: center;
-}
-
-callme {
-  text-align: center;
-}
 footer .bottom {
   display: flex;
   justify-content: space-between;
   border-top: .5px solid #d3d3d3;
   margin: .5em;
 }
+
+bottom,
 ul,
 a {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin: .2em;
-  padding: .1em;
+  list-style-type: none;
   text-decoration: none;
+  margin: .5em;
+  padding: 0.3em;
 }
 
 /* ==============================
    Media Queries 
    ============================== */
-@media (max-width: 768px) {
-  #Home1,
-  #Portfolio1 {
-    visibility: hidden;
-  }
-
-  footer h1 {
-    font-size: .5em;
-  }
-  ul {
-    font-size: .4em;
-  }
-}
 
 @media (min-width: 48em) {
   header .container {
@@ -147,29 +124,18 @@ a {
     grid-column-gap: .1em;
     grid-row-gap: 0;
   }
-  h2 {
-    align-self: center;
-  }
-  h3 {
-    text-align: center;
-  }
+  h2,
+  h3,
   h4 {
     text-align: center;
   }
-  img {
-    max-width: 100%;
-  }
+  
 
   #Backtotop1 {
     visibility: hidden;
   }
 
-  ul {
-    text-align: left;
-    margin: .5em;
-    padding: 0;
-  }
-}
+
 @media (min-width: 64em) {
   .media {
     display: grid;
@@ -202,4 +168,7 @@ a {
     grid-column-gap: .1em;
     grid-row-gap: .5em;
   }
+
+img {
+  align-items: center;
 }
