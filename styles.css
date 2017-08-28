@@ -59,13 +59,10 @@ wrapper {
   background-color: white;
 }
 
- {
-  text-align: center;
-}
-
 callme {
   text-align: center;
 }
+
 footer .bottom {
   display: flex;
   justify-content: space-between;
@@ -122,14 +119,14 @@ a {
 
   .media {
     display: grid;
-    grid-template-columns: 1fr, 1 fr;
+    grid-template-columns: 1fr, 1fr;
     grid-template-areas: "content img";
     column-gap: 8em;
     margin: 2em;
   }
 
   .media .image {
-    grid-area: img;
+    grid-area: "img";
     margin: 1em;
   }
 
@@ -180,7 +177,7 @@ a {
   }
 
   .media .image {
-    grid-area: img;
+    grid-area: "img";
     padding: 1em;
   }
 
